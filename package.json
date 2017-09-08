@@ -1,0 +1,13 @@
+{
+  "name": "presentations",
+  "version": "1.0.0",
+  "description": "Magrathea Labs slides",
+  "main": "index.js",
+  "repository": "https://github.com/magrathealabs/presentations",
+  "author": "Magrathea Labs",
+  "license": "CC BY-SA 4.0",
+  "dependencies": {
+    "reveal-md": "^0.4.2",
+    "reveal.js": "^3.5.0"
+  }
+}
