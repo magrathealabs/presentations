@@ -1,5 +1,7 @@
 # Presentations
 
+[![Website](https://img.shields.io/website-up-down-green-red/http/speakerdeck.com.svg?label=speakerdeck)](https://speakerdeck.com/magrathealabs)
+
 Our presentations using [reveal.js](https://github.com/hakimel/reveal.js).
 
 ## Development
