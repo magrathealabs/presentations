@@ -13,10 +13,10 @@ yarn install
 yarn global add reveal-md
 ```
 
-To run the slides in the live reload mode use option `-w`:
+To run the slides in the live reload mode use option `--watch`:
 
 ```
-reveal-md -w slides.md
+reveal-md slides.md --watch --css theme/mlabs.css
 ```
 
 Update themes:
