@@ -1,0 +1,52 @@
+/**
+ * MLabs theme for reveal.js.
+ *
+ * Copyright (C) 2017 Magrathea Labs, http://www.magrathealabs.com
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #111;
+
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainFontWeight: '300';
+$linkColor: #e7ad52;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: 'Quicksand', Impact, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #e7ad52;
+
+.cover-bottom-logo {
+  position: absolute !important;
+  bottom: 80px !important;
+  margin-left: -129px !important;
+  left: 50% !important;
+
+  img {
+    background-color: transparent !important;
+    border: 0 !important;
+    width: 256px !important;
+    margin: 0 !important;
+  }
+
+  p {
+    text-align: center !important;
+    font-size: 16px !important;
+    font-weight: 100;
+    margin: 0 !important;
+  }
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";

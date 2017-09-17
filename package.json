@@ -8,6 +8,7 @@
   "license": "CC BY-SA 4.0",
   "dependencies": {
     "reveal-md": "^0.4.2",
-    "reveal.js": "^3.5.0"
+    "reveal.js": "^3.5.0",
+    "scss-compile": "^0.1.7"
   }
 }

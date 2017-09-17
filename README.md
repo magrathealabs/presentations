@@ -19,6 +19,12 @@ To run the slides in the live reload mode use option `-w`:
 reveal-md -w slides.md
 ```
 
+Update themes:
+
+```sh
+scss --watch theme/source/mlabs.scss:theme/mlabs.css
+```
+
 ### PDF Print
 
 ```

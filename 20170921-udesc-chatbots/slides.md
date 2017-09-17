@@ -1,16 +1,19 @@
 ---
 title: Introdução aos ChatBots
-theme: night
 highlight-theme: tomorrow-night
 revealOptions:
 transition: 'fade'
 ---
 
-### Introdução aos ChatBots
-<!-- .slide: data-background-image="images/background.jpg" -->
+<!-- .slide: data-background-image="images/background.jpg" data-background-size="cover"; style="height: 100%" -->
 
-![Example Picture](images/logo-white.png)
- <!-- .element: style="background-color: transparent; border: 0; width: 300px" -->
+### The Hitchhiker's Guide to **ChatBots**
+<!-- .element: style="position: absolute; top: 35%;" -->
+
+<div class="cover-bottom-logo">
+![Example Picture](images/mlabs-logo.png)
+<p>www.magrathealabs.com</p>
+</div>
 
 ---
 
