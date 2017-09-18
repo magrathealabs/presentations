@@ -37,7 +37,7 @@ The presentations in this repository are available under the terms of the [CC BY
 
 ## About Magrathea Labs
 
-`marvin-bot` is maintained by Magrathea Labs. The names and logos for Magrathea Labs are trademarks of Magrathea Labs.
+`presentations` is maintained by Magrathea Labs. The names and logos for Magrathea Labs are trademarks of Magrathea Labs.
 
 Magrathea Labs is a team of specialists in Software Engineering, Distributed Systems, Artificial Intelligence and
 Data Science. We love to solve challenging problems and build amazing things. Want to do something amazing with us?
