@@ -574,10 +574,32 @@ self.bot.sort_replies()
 
 ---
 
+<!-- .slide: data-background="#ffffff" -->
+
+<center>
+![images/messenger-code.png](images/messenger-code.png)
+<!-- .element: style=" margin: 0; width: 500px" -->
+
+<br>
+**[m.me/magrathealabs](https://www.messenger.com/t/magrathealabs)**
+</center>
+
+---
+
+<!-- .slide: data-background="#ffffff" -->
+
+<center>
+![images/messenger-code.png](images/messenger-code.png)
+<!-- .element: style=" margin: 0; width: 680px" -->
+</center>
+
+---
+
 <center>
 ![images/examples/demo.gif](images/examples/demo.gif)
 <!-- .element: style="width: 800px" -->
 
+<br>
 [m.me/magrathealabs](https://www.messenger.com/t/magrathealabs)
 </center>
 
@@ -604,10 +626,7 @@ self.bot.sort_replies()
 
 <center>
 ![images/messenger-code.png](images/messenger-code.png)
-<!-- .element: style="width: 650px" -->
-</center>
-
----
+<!-- .element: style=" margin: 0; width: 400px" -->
 
 <br>
 www.magrathealabs.com
@@ -616,6 +635,7 @@ contact@magrathealabs.com
 <br>
 +55 47 99155-2269
 <br>
+</center>
 
 ---
 
