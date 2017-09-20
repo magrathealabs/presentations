@@ -12,19 +12,47 @@
 // Include theme-specific fonts
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #111;
+$backgroundColor: #23122F;
 
 $mainFont: 'Source Sans Pro', sans-serif;
-$mainFontWeight: '300';
-$linkColor: #e7ad52;
-$linkColorHover: lighten( $linkColor, 20% );
+$mainFontWeight: 100;
+$linkColor: #36B37E;
+$linkColorHover: darken($linkColor, 20%);
 $headingFont: 'Quicksand', Impact, sans-serif;
+$headingColor: #FFD500;
 $headingTextShadow: none;
 $headingLetterSpacing: -0.03em;
 $headingTextTransform: none;
 $selectionBackgroundColor: #e7ad52;
+
+// Theme template ------------------------------
+@import "../template/theme";
+
+.reveal p {
+  text-align: justify;
+}
+
+.reveal section img {
+  box-shadow: none;
+  border: none;
+}
+
+.reveal blockquote {
+  float: left;
+  width: 90%;
+  padding: 0 40px 0 30px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+  .reveal blockquote p:first-child,
+  .reveal blockquote p:last-child {
+    font-family: 'Roboto Slab', serif;
+    text-align: right;
+  }
 
 .cover-bottom-logo {
   position: absolute !important;
@@ -47,6 +75,8 @@ $selectionBackgroundColor: #e7ad52;
   }
 }
 
-
-// Theme template ------------------------------
-@import "../template/theme";
+.cover-title {
+  color: #ffffff !important;
+  position: absolute;
+  top: 35%;
+}
