@@ -69,13 +69,7 @@ Note: Existem a um bom tempo. Gráfico de interesse sobre o tópico "Bots" pelo 
 
 ![images/trending.png](images/trending.png)
 
----
-
-<!-- .slide: data-background-color="#262727" -->
-
-## **trending**
-
-![images/trending.png](images/users.png)
+Note: Messenger e WhatsApp 1.2 BI cada. Skype 300 Mi. Telegram 100 Mi. WeChat 889 Mi.
 
 ---
 
@@ -252,7 +246,7 @@ Note: Existem bots para quase tudo. Eles são úteis? Vocês usam algum desses?
 ## **CASOS DE USO**
 
 * Atendimento ao Cliente (SAC)
-* Base de conecimento de Perguntas e Respostas (FAQ)
+* Base de conhecimento de Perguntas e Respostas (FAQ)
 * Assistentes Pessoais
 * Alerta de mudança de status
 * IoT
@@ -317,7 +311,7 @@ Rise in personal bot coaches (weight loss, finances, parenting, sports)
 
 ## **Comércio**
 
-> “Alexa, adicione açucar na minha lista de compras”
+> “Alexa, adicione açúcar na minha lista de compras”
 
 Note: Comentar sobre o caso South Park
 
@@ -425,7 +419,7 @@ ChatBots simples são fáceis de fazer, mas ...
 * Extração de Intenções e Entidades
 * Entidades padrões: temperatura, números, URLs, emails, etc.
 * Aprendizado de Máquina fácil
-* Integra por padrão ao Messager
+* Integra por padrão ao Messenger
 
 Note: Adquirido pelo Facebook
 
@@ -528,7 +522,7 @@ Note: Você pode subir o REPL (interpretador) e ir testando seus scripts
 ### **RiveScript**
 
 ```
- self.bot = RiveScript(
+self.bot = RiveScript(
   utf8=True,
   session_manager=RedisSessionStorage()
 )
