@@ -3,7 +3,7 @@ title: Introdução aos ChatBots
 highlight-theme: tomorrow-night
 revealOptions:
   transition: slide
-  slideNumber: true
+  slideNumber: false
   <!-- center: false -->
 ---
 
@@ -338,25 +338,6 @@ Note: Comentar sobre o caso South Park
 
 ---
 
-<!-- .slide: data-background-image="images/examples/duolingo.jpg" -->
-
----
-
-<!-- .slide: data-background-image="images/examples/donotpay.png" -->
-
-Note: Comentar o cado DoNotPay e Equifax
-
----
-
-<!-- .slide: data-background-color="#E2E6EA" -->
-
-<center>
-![images/examples/flight-messenger.gif](images/examples/flight-messenger.gif)
-<!-- .element: style="width: 90%" -->
-</center>
-
----
-
 <!-- .slide: data-background-color="#E2E6EA" -->
 
 <center>
@@ -386,31 +367,7 @@ ChatBots simples são fáceis de fazer, mas ...
 
 ---
 
-<!-- .slide: data-background-image="images/problems.jpg" -->
-
----
-
-## **PROBLEMAS**
-
-* IA e conversas de contexto aberto
-* Diretório de bots
-* Consciência
-* Transparência
-
----
-
 ### **CONSTRUINDO UM CHATBOT**
-
----
-
-## **Chatfuel**
-
-<center>
-<video data-autoplay>
-  <source data-src="images/platforms/chatfuel.mp4" type="video/mp4" />
-</video>
-[chatfuel.com](https://chatfuel.com)
-</center>
 
 ---
 
@@ -576,15 +533,6 @@ self.bot.sort_replies()
 
 <br>
 **[m.me/magrathealabs](https://www.messenger.com/t/magrathealabs)**
-</center>
-
----
-
-<!-- .slide: data-background="#ffffff" -->
-
-<center>
-![images/messenger-code.png](images/messenger-code.png)
-<!-- .element: style=" margin: 0; width: 680px" -->
 </center>
 
 ---
