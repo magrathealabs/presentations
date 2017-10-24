@@ -1,0 +1,84 @@
+/**
+ * Pyladies theme for reveal.js.
+ *
+ * Copyright (C) 2017 Fab Lab Joinville, http://www.fablabjoinville.com.br
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #FCFCFA;
+
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainFontWeight: 100;
+$mainColor: #222222;
+$linkColor: #E51E41;
+$linkColorHover: darken($linkColor, 20%);
+$headingFont: 'Quicksand', Impact, sans-serif;
+$headingColor: #E51E41;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #E51E41;
+
+// Theme template ------------------------------
+@import "../template/theme";
+
+.reveal p {
+  text-align: justify;
+}
+
+.reveal section img {
+  box-shadow: none;
+  border: none;
+}
+
+.reveal blockquote {
+  float: left;
+  width: 90%;
+  padding: 0 40px 0 30px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 28px;
+  background-color: #eee;
+}
+  .reveal blockquote p:first-child,
+  .reveal blockquote p:last-child {
+    font-family: 'Roboto Slab', serif;
+    text-align: right;
+  }
+
+.cover-bottom-logo {
+  position: absolute !important;
+  bottom: 80px !important;
+  margin-left: -129px !important;
+  left: 50% !important;
+
+  img {
+    background-color: transparent !important;
+    border: 0 !important;
+    width: 256px !important;
+    margin: 0 !important;
+  }
+
+  p {
+    text-align: center !important;
+    font-size: 16px !important;
+    font-weight: 100;
+    margin: 0 !important;
+  }
+}
+
+.cover-title {
+  color: #FFFFFF !important;
+  position: absolute;
+  top: 35%;
+}
