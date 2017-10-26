@@ -4,6 +4,13 @@
 
 Our presentations using [reveal.js](https://github.com/hakimel/reveal.js).
 
+## Presentations
+
+* [O Guia do Mochileiro dos ChatBots](http://www.magrathealabs.com/decks/20170921-chatbots)
+* [Carreiras em Computação](http://www.magrathealabs.com/decks/20171025-udesc-careers/)
+
+You can also find them on [Speakerdeck](https://speakerdeck.com/magrathealabs).
+
 ## Development
 
 We use [Yarn](https://yarnpkg.com) package manager to install the needed dependencies.
@@ -13,7 +20,7 @@ yarn install
 yarn global add reveal-md
 ```
 
-To run the slides in the live reload mode use option `--watch`:
+To run the slides in the live mode use option `--watch`:
 
 ```
 reveal-md slides.md --watch --css theme/mlabs.css --highlight-theme hybrid
