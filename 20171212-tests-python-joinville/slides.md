@@ -45,31 +45,6 @@ $ python test_with_unittest.py
 
 ---
 
-<center>**Doctest:** Pesquisa por pedaços de texto que se assemelham às sessões interativas de Python em "docstrings".</center>
-
-```py
-def square(x):
-    """Return the square of x.
-
-    >>> square(2)
-    4
-    >>> square(-2)
-    4
-    """
-
-    return x * x
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
-```
-
-```py
-$ python test_with_doctest.py
-```
-
----
-
 ### **FERRAMENTAS**
 
 <center>**Pytest:** Contém várias features e um sintaxe extremamente simples.</center>
@@ -104,8 +79,8 @@ $ tox
 <img src="images/test_double.gif" width="800" height="440" />
 
 <ul style="font-size: 30px">
-	<li>SUT (System under test)</li>
-	<li>DOC (Dependent-on component)</li>
+    <li>SUT (System under test)</li>
+    <li>DOC (Dependent-on component)</li>
 </ul>
 
 </center>
@@ -114,139 +89,135 @@ $ tox
 
 ### **Definição**
 <center>
-	Termo genérico para qualquer caso em que um objeto de produção é substituído com fins de testar a aplicação.
+    Termo genérico para qualquer caso em que um objeto de produção é substituído com fins de testar a aplicação.
 </center>
 
 ### **Tipos**
 <ol>
-	<li>*Dummy*</li>
-	<li>*Fake*</li>
-	<li>*Mock*</li>
-	<li>*Stub*</li>
-	<li>*Spy*</li>
+    <li>*Dummy*</li>
+    <li>*Fake*</li>
+    <li>*Mock*</li>
+    <li>*Stub*</li>
+    <li>*Spy*</li>
 </ol>
 
 Note:
- Dummy: objeto que é passado para o sistema como um argumento (ou um atributo de um argumento), mas nunca é realmente usado, ou seja, somente preenche passagens de parâmetros.
- Stub: objeto que substitui outro com um objeto de teste-especifico que alimento com inputs o SUT, o sistema que está sendo testado
- Spy: objeto que captura os chamadas de outputs feitos para o componente dependente pelo sistema sendo testado para uma verificação posterior.
- Mock: objeto utilizado para substituir o componente real que o sistema sendo testado depende para que a verificação que os outputs estão sendo utilizados da maneira certa pelo sistema seja feita.
- Fake: objeto que substitui a funcionalidade do componente dependente com uma implementação alternativa da mesma funcionalidade.
+
+Dummy objects are passed around but never actually used. Usually they are just used to fill parameter lists.
+Fake objects actually have working implementations, but usually take some shortcut which makes them not suitable for production (an in memory database is a good example).
+Stubs provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test.
+Spies are stubs that also record some information based on how they were called. One form of this might be an email service that records how many messages it was sent.
+Mocks are what we are talking about here: objects pre-programmed with expectations which form a specification of the calls they are expected to receive.
 
 ---
 
-<center>
 
 <h3>Dummy</h3>
-Usado apenas para preencher passagens de parâmetros
-<img src="images/code/dummy.png"/>
-
-</center>
+<center><img src="images/code/dummy.png"/></center>
 
 ---
 
 <h3>Fake</h3>
-
-<center>
-<ul style="font-size: 30px">
-    <li>Objeto com certa funcionalidade</li>
-    <li>Útil para resolver alguma dependência em testes</li>
-</ul>
-<img src="images/fake.gif" width="800" height="440" />
-
-</center>
+<center><img src="images/fake.gif" width="800" height="440" /></center>
 
 ----
 
 <center>
-
 <img src="images/code/fake1.png" width="660" height="270" />
 <img src="images/code/fake2.png" width="660" height="300" />
-
 </center>
 
 
 ---
 
 <h3>Mock</h3>
-
-<center>
-<ul style="font-size: 30px">
-    <li>Setar retornos de valores pré-definidos</li>
-    <li>Verificar se algum método foi chamado durante a execução do teste</li>
-</ul>
-<img src="images/mock.gif" width="800" height="440" />
-
-</center>
+<center><img src="images/mock.gif" width="800" height="440" /></center>
 
 ----
 
-<center>
-<img src="images/code/mock.png"/>
-</center>
+<center><img src="images/code/mock.png"/></center>
 
 ---
 
 <h3>Stub</h3>
-
-<center>
-
-<ul style="font-size: 30px">
-    <li>Setar retornos de valores pré-definidos</li>
-    <li>Não verifica se algum método foi chamado durante a execução do teste</li>
-</ul>
-<img src="images/stub.gif" width="800" height="440" />
-
-</center>
+<center><img src="images/stub.gif" width="800" height="440" /></center>
 
 ----
 
-<center>
-<img src="images/code/stub.png" width="800" height="600" />
-</center>
+<center><img src="images/code/stub.png" width="800" height="600" /></center>
 
 ---
 
 <h3>Spy</h3>
+<center><img src="images/spy.gif" width="800" height="440" /></center>
+
+----
+
+<center><img src="images/code/spy.png"/></center>
+
+---
+
+<h3>Mocks vs. Stubs</h3>
+<p><center style="font-size: 23px">https://martinfowler.com/articles/mocksArentStubs.html</center></p>
+
+<p>
+<center>A grande diferença reside na maneira em que os resultados dos testes são verificados.<br>
+- Verificação de estado vs. verificação de comportamento
+</center></p>
+
+---
+
+<h3>Libs</h3>
+
+<ol>
+    <li>Mock</li>
+    <ul>
+        <li>https://github.com/testing-cabal/mock</li>
+        <li>https://github.com/openstack/requests-mock</li>
+    </ul>
+    <li>Mocks e stubs</li>
+    <ul>
+        <li>https://github.com/uber/doubles</li>
+    </ul>
+</ol>
+
+---
+
+<h3>`unittest.mock`</h3>
 
 <center>
-
-<ul style="font-size: 30px">
-    <li>Não setamps retornos de valores pré-definidos</li>
-    <li>Armazenamos as chamadas realizadas por colaboradores</li>
-</ul>
-<img src="images/spy.gif" width="800" height="440" />
-
+Substitui funções, classes e objetos com `mock objects` para que seja possível fazer asserções sobre como foram utilizados.
 </center>
 
 ----
 
 <center>
-<img src="images/code/spy.png"/>
+Como testar ações num arquivo?
+![images/code/file_actions.bmp](images/code/file_actions.bmp)
 </center>
 
 ---
 
-<h3>Mocks vs. Stubs</h3>
-
-> Ainda, ocasionalmente, me confundo entre os dois.
-
-<p>
-    <center style="font-size: 23px">https://martinfowler.com/articles/mocksArentStubs.html</center>
-</p>
-
+<h3>`requests_mock`</h3>
 
 <center>
-A grande diferença reside na maneira em que os resultados dos testes são verificados.
-<br>
-- Verificação de estado vs. verificação de comportamento
+Mocks de respostas para a biblioteca `requests`.
+</center>
+
+----
+
+<center>
+Como testar chamadas de API?
+![images/code/api.bmp](images/code/api.bmp)
 </center>
 
 ---
 
+<h3>Referências:</h3>
 
-Referências:
-
-- http://xunitpatterns.com/
-<br>
-- https://klauslaube.com.br/2015/06/29/os-testes-e-os-dubles-parte-2.html
+<ul>
+    <li>http://xunitpatterns.com/</li>
+    <li>https://dev.to/mistermocha/python-unit-testing-with-mock---part-one</li>
+    <li>https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da</li>
+    <li>https://klauslaube.com.br/2015/06/29/os-testes-e-os-dubles-parte-2.html</li>
+</ul>
