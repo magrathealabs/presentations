@@ -162,7 +162,7 @@ Mocks are what we are talking about here: objects pre-programmed with expectatio
 
 <p>
 <center>A grande diferença reside na maneira em que os resultados dos testes são verificados.<br>
-- Verificação de estado vs. verificação de comportamento
+- Verificação de comportamento vs. verificação de estado
 </center></p>
 
 ---
@@ -173,6 +173,7 @@ Mocks are what we are talking about here: objects pre-programmed with expectatio
     <li>Mock</li>
     <ul>
         <li>https://github.com/testing-cabal/mock</li>
+        <li>https://github.com/getsentry/responses</li>
         <li>https://github.com/openstack/requests-mock</li>
     </ul>
     <li>Mocks e stubs</li>
@@ -212,6 +213,22 @@ Como testar chamadas de API?
 </center>
 
 ---
+
+<h3>`doubles`</h3>
+
+<center>
+Fornece funcionalidade para "`stubbing`" e "`mocking`" com sintaxe simples e expressiva.
+</center>
+
+----
+
+<center>
+Como testar ações num arquivo?
+![images/code/file_actions.bmp](images/code/file_actions.bmp)
+</center>
+
+---
+
 
 <h3>Referências:</h3>
 
