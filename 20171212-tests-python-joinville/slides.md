@@ -70,10 +70,38 @@ $ py.test
 $ tox
 ```
 
+---
+
+### **TIPOS DE TESTES**
+
+- **Testes unitários**
+- Testes de integração
+- Testes funcionais
+
+Note:
+    -- automated tests --
+    Testes unitários: "white.png box", testa pedaços pequenos de código, tipicalmente funções individuais isoladas e sozinhas.
+    Testes de integração: "white box", testa como as partes do sistema funcionam juntas. Não são isolados de outros componentes e.g. banco de dados
+    Testes funcionais: "black box", usado para entender como o sistema se comportaria durante a navegação de um usuário. Verificar
+                        se a aplicação está se comportando como esparada
+
+
 
 ---
 
-### **DUBLÊS DE TESTE**
+### **DIFERENTES ABORDAGENS**
+
+- "Classical"
+- "Mockist"
+
+
+Note:
+    Classical: dá preferẽncia à objetos reais e dublês (se for ruim utilizar o implementação real)
+    Mockist: dá preferẽncia sempre à mocks para qualquer objeto
+
+---
+
+### **(Mockist) DUBLÊS DE TESTE**
 
 <center>
 <img src="images/test_double.gif" width="800" height="440" />
@@ -117,6 +145,16 @@ Mocks are what we are talking about here: objects pre-programmed with expectatio
 
 ---
 
+<h3>Stub</h3>
+<center><img src="images/stub.gif" width="800" height="440" /></center>
+
+----
+
+
+<center><img src="images/code/stub.png" width="800" height="600" /></center>
+
+---
+
 <h3>Fake</h3>
 <center><img src="images/fake.gif" width="800" height="440" /></center>
 
@@ -127,25 +165,6 @@ Mocks are what we are talking about here: objects pre-programmed with expectatio
 <img src="images/code/fake2.png" width="660" height="300" />
 </center>
 
-
----
-
-<h3>Mock</h3>
-<center><img src="images/mock.gif" width="800" height="440" /></center>
-
-----
-
-<center><img src="images/code/mock.png"/></center>
-
----
-
-<h3>Stub</h3>
-<center><img src="images/stub.gif" width="800" height="440" /></center>
-
-----
-
-<center><img src="images/code/stub.png" width="800" height="600" /></center>
-
 ---
 
 <h3>Spy</h3>
@@ -155,6 +174,14 @@ Mocks are what we are talking about here: objects pre-programmed with expectatio
 
 <center><img src="images/code/spy.png"/></center>
 
+---
+
+<h3>Mock</h3>
+<center><img src="images/mock.gif" width="800" height="440" /></center>
+
+----
+
+<center><img src="images/code/mock.png"/></center>
 ---
 
 <h3>Mocks vs. Stubs</h3>
@@ -229,11 +256,37 @@ Como testar ações num arquivo?
 
 ---
 
+### **(Classicist)**
+
+----
+
+<center>
+Como testar ações num arquivo?
+![images/code/file_actions.bmp](images/code/file_actions.bmp)
+</center>
+
+----
+
+<center>
+Como testar uma classe de usuário?
+![images/code/user.bmp](images/code/user.bmp)
+</center>
+
+---
+
+### **Quando ser um "Classicist" ou "Mockist"?**
+
+TODO
+
+---
 
 <h3>Referências:</h3>
 
-<ul>
+<ul style="font-size: 25px">
     <li>http://xunitpatterns.com/</li>
+    <li>http://www.softwaretestinghelp.com/guide-to-functional-testing/</li>
+    <li>https://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/</li>
+    <li>https://codeutopia.net/blog/2015/04/11/what-are-unit-testing-integration-testing-and-functional-testing/</li>
     <li>https://dev.to/mistermocha/python-unit-testing-with-mock---part-one</li>
     <li>https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da</li>
     <li>https://klauslaube.com.br/2015/06/29/os-testes-e-os-dubles-parte-2.html</li>
