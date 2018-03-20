@@ -29,6 +29,19 @@ Note: Vamos apresentar como, porquê e para que imbutir golang em aplicações r
 
 ----
 
+
+<!-- .slide: data-background-image="images/creators.png" data-background-size="cover"; style="height: 100%" -->
+
+#### Criado por
+
+```ruby
+ - Ken Thompson (B, C, Unix, UTF8)
+ - Rob Pike (Unix, UTF8)
+ - Robert Griesemer (Hotspot, JVM)
+ - Alguns laboratórios da Google
+```
+----
+
  - Programação concorrente e efetiva
  - Omissão de diversas características em prol da eficiência:
    - Exceções
@@ -45,7 +58,7 @@ Note: Vamos apresentar como, porquê e para que imbutir golang em aplicações r
 
 ----
 
-Criado pela toda poderosa GOOGLE visando agilizar o processo de desenvolvimento de microsserviços.
+Criado visando agilizar o processo de desenvolvimento de microsserviços.
 
  - Rápido
  - Paralelo
