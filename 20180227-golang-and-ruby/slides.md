@@ -166,7 +166,7 @@ Ganho de desempenho ao executar algoritmos complexos no ambiente Go!
 ----
 
 Facilidade para desacoplar a aplicação Go para um microsserviço.
-O gargalo para de ser a comunicação entre os ambientes para a rede!
+O gargalo para de ser a comunicação entre os ambientes e torna-se a rede!
 
 ---
 
