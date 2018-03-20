@@ -23,31 +23,6 @@ Note: Vamos apresentar como, porquê e para que imbutir golang em aplicações r
 
 ---
 
-### Objetivos da linguagem Ruby
-
-----
-
- - Mais poderosa que Perl
- - Mais orientada a objetos que Python
- - Suporte a programação funcional e reflexiva
-
-----
-
- - Ruby MRI
- - JRuby
- - Rubinius
- - IronRuby
- - MacRuby
- - HotRuby
- - RGSS
- - ...
-
-----
-
- Hoje usamos o YARV - Yet Another Ruby VirtualMachine que substitui o antigo padrão Ruby MRI (Matz's Ruby Interpreter) após a versão 1.9
-
----
-
 ### Objetivos da linguagem Go
 
 ----
@@ -66,17 +41,65 @@ Note: Vamos apresentar como, porquê e para que imbutir golang em aplicações r
  - GCCGO
    - analisador recursivo
 
+----
+
+Criado pela toda poderosa GOOGLE visando agilizar o processo de desenvolvimento de microsserviços.
+
+ - Rápido
+ - Legível
+ - Paralelo
+ - `C/C++` com bibliotecas nativas orientada a objetos
 ---
 
-### Exportando Golang para biblioteca compartilhada
+### Objetivos da linguagem Ruby
+
+----
+
+ - Mais poderosa que Perl
+ - Mais orientada a objetos que Python
+    - TUDO será um objeto!
+ - Suporte a programação funcional e reflexiva
+
+----
+
+ - Ruby MRI
+ - MacRuby
+ - HotRuby
+ - Rubinius
+ - JRuby (Ruby + Java = Oracle)
+ - TruffleRuby (Ruby + Java = Oracle)
+ - IronRuby (Ruby + CSharp)
+ - RGSS (RPG Maker XP, VX e VX Ace)
+ - ...
+ - GoRuby para programação concorrente?
+
+----
+
+ Hoje usamos o YARV - Yet Another Ruby VirtualMachine que substitui o antigo padrão Ruby MRI (Matz's Ruby Interpreter) após a versão 1.9
+
+---
+
+### E aí? Como misturamos isso?!
+
+----
+
+Através de bibliotecas compartilhadas!
+
+Mas antes precisamos escrever um programa que seja compatível com essa forma de compartilhar funcionalidades.
+
+---
+
+### O ambiente Go!
+
+Nota: Golang versão 1.5 ou maior
 
 ```golang
 package main
 
 import "C"
 
-// export my_add
-func my_add(a, b C.int) C.int {
+// export MyAdd
+func MyAdd(a, b C.int) C.int {
   return a+b
 }
 
@@ -84,3 +107,46 @@ func main() {
   // Adicione sua rotina de inicialização aqui
 }
 ```
+
+```sh
+marlon@blackfox:$
+  go build -o go_lib.so -buildmode=c-shared go_lib.go
+```
+---
+
+### O Ambiente Ruby
+
+Nota: Ruby 1.9.3 ou maior
+
+```sh
+  gem install ffi
+```
+
+```ruby
+require 'ffi'
+
+class GoLib
+  extend FFI::Library
+  ffi_lib './go_lib.so'
+  attach_function :MyAdd, [:int, :int], :int
+
+  alias my_add MyAdd
+end
+
+include GoLib
+
+puts my_add(2, 5)
+# => 7
+```
+
+---
+
+### E qual o ganho de desempenho?
+
+---
+
+### Conclusões
+
+---
+
+### Perguntas

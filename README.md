@@ -20,6 +20,12 @@ yarn install
 yarn global add reveal-md
 ```
 
+or with NPM:
+
+```sh
+npm install -g reveal-md
+```
+
 To run the slides in the live mode use option `--watch`:
 
 ```
@@ -49,4 +55,3 @@ The presentations in this repository are available under the terms of the [CC BY
 Magrathea Labs is a team of specialists in Software Engineering, Distributed Systems, Artificial Intelligence and
 Data Science. We love to solve challenging problems and build amazing things. Want to do something amazing with us?
 We are available for [hire](mailto:contact@magrathealabs.com).
-

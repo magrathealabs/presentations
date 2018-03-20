@@ -23,6 +23,7 @@ class RubyLib
   end
 end
 
+puts 'GoLib'
 Benchmark.bm do |x|
   x.report('n+1') do
     5_000_000.times do |n|
@@ -35,7 +36,7 @@ Benchmark.bm do |x|
   end
 end
 
-
+puts 'Ruby'
 Benchmark.bm do |x|
   x.report('n+1') do
     5_000_000.times do |n|
