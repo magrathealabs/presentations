@@ -10,7 +10,7 @@ revealOptions:
 <!-- .slide: data-background-image="images/background.jpg" data-background-size="cover"; style="height: 100%" -->
 
 Marlon Henry Schweigert
-### Embutindo Golang em aplicações Ruby
+### Embutindo **Golang** em aplicações **Ruby**
 
 <!-- .element: class="cover-title" -->
 
@@ -25,7 +25,7 @@ Note: Vamos apresentar como, porquê e para que imbutir golang em aplicações r
 
 <!-- .slide: data-background-image="images/golang.png" data-background-size="cover"; style="height: 100%" -->
 
-### Objetivos da linguagem Go
+### Objetivos da **linguagem Go**
 
 ----
 
@@ -72,13 +72,13 @@ Criado visando agilizar o processo de desenvolvimento de microsserviços.
  - Poderosa biblioteca padrão
  - Coletor de lixo
  - Portátil
- - Código Livre!
+ - Código Aberto!
 
 ---
 
 <!-- .slide: data-background-image="images/ruby.jpg" data-background-size="cover"; style="height: 100%" -->
 
-### Objetivos da linguagem Ruby
+### Objetivos da linguagem **Ruby**
 
 ----
 
@@ -116,7 +116,7 @@ Mas antes precisamos escrever um programa que seja compatível com essa forma de
 
 ---
 
-### O ambiente Go!
+### O ambiente **Go**!
 
 Nota: Golang versão 1.5 ou maior
 
@@ -141,7 +141,7 @@ marlon@blackfox:$
 ```
 ---
 
-### O Ambiente Ruby
+### O Ambiente **Ruby**!
 
 Nota: Ruby 1.9.3 ou maior
 
@@ -168,7 +168,7 @@ puts my_add(2, 5)
 
 ---
 
-### E qual o ganho de desempenho?
+### E qual o ganho de **desempenho**?
 
 ---
 
@@ -194,3 +194,9 @@ O gargalo para de ser a comunicação entre os ambientes e torna-se a rede!
 ---
 
 ### Perguntas
+
+---
+
+### Leitura
+
+Blogpost: [Embedding golang into ruby](https://blog.magrathealabs.com/embedding-golang-into-a-ruby-application-7c2bf63e93cf)
