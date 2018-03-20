@@ -48,9 +48,19 @@ Note: Vamos apresentar como, porquê e para que imbutir golang em aplicações r
 Criado pela toda poderosa GOOGLE visando agilizar o processo de desenvolvimento de microsserviços.
 
  - Rápido
- - Legível
  - Paralelo
- - "C/C++" com bibliotecas nativas orientada a objetos
+ - Multiplos núcleos
+ - Compilado
+ - Network!
+
+----
+
+ - Sintaxe limpa
+ - Poderosa biblioteca padrão
+ - Coletor de lixo
+ - Portátil
+ - Código Livre!
+
 ---
 
 <!-- .slide: data-background-image="images/ruby.jpg" data-background-size="cover"; style="height: 100%" -->
