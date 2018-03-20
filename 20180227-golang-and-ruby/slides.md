@@ -10,7 +10,7 @@ revealOptions:
 <!-- .slide: data-background-image="images/background.jpg" data-background-size="cover"; style="height: 100%" -->
 
 Marlon Henry Schweigert
-### Imbutindo Golang em aplicações Ruby
+### Embutindo Golang em aplicações Ruby
 
 <!-- .element: class="cover-title" -->
 
@@ -23,15 +23,17 @@ Note: Vamos apresentar como, porquê e para que imbutir golang em aplicações r
 
 ---
 
+<!-- .slide: data-background-image="images/golang.png" data-background-size="cover"; style="height: 100%" -->
+
 ### Objetivos da linguagem Go
 
 ----
 
  - Programação concorrente e efetiva
- - Omissão de diversas características em pró da eficiência:
+ - Omissão de diversas características em prol da eficiência:
    - Exceções
    - Herança
-   - Programação Genérica
+   - Programação genérica
    - Sobrecarga de métodos
 
 ----
@@ -48,16 +50,17 @@ Criado pela toda poderosa GOOGLE visando agilizar o processo de desenvolvimento 
  - Rápido
  - Legível
  - Paralelo
- - `C/C++` com bibliotecas nativas orientada a objetos
+ - "C/C++" com bibliotecas nativas orientada a objetos
 ---
+
+<!-- .slide: data-background-image="images/ruby.jpg" data-background-size="cover"; style="height: 100%" -->
 
 ### Objetivos da linguagem Ruby
 
 ----
 
  - Mais poderosa que Perl
- - Mais orientada a objetos que Python
-    - TUDO será um objeto!
+ - Tudo é um objeto, incluindo o Bytecode
  - Suporte a programação funcional e reflexiva
 
 ----
@@ -70,6 +73,7 @@ Criado pela toda poderosa GOOGLE visando agilizar o processo de desenvolvimento 
  - TruffleRuby (Ruby + Java = Oracle)
  - IronRuby (Ruby + CSharp)
  - RGSS (RPG Maker XP, VX e VX Ace)
+ - TinyRuby (Ruby over Lua)
  - ...
  - GoRuby para programação concorrente?
 
@@ -146,6 +150,23 @@ puts my_add(2, 5)
 ---
 
 ### Conclusões
+
+----
+
+Perca da reflexão sobre o código nativo.
+
+----
+
+Perca de desempenho na comunicação entre a aplicação ruby e a aplicação Golang.
+
+----
+
+Ganho de desempenho ao executar algoritmos complexos no ambiente Go!
+
+----
+
+Facilidade para desacoplar a aplicação Go para um microsserviço.
+O gargalo para de ser a comunicação entre os ambientes para a rede!
 
 ---
 
